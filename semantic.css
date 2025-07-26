@@ -1,0 +1,269 @@
+/* General Resets and Font Settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #0a0a0a; /* Slightly darker background */
+    color: #cccccc; /* Softer white for text */
+    font-size: clamp(1rem, 1.5vw, 1.1rem);
+    line-height: 1.7;
+    font-weight: 400; /* Thinner default font weight */
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+}
+
+
+/* Header */
+header {
+    background: #121212; /* Darker header */
+    color: #ffffff;
+    padding: 4rem 0 3rem;
+    text-align: center;
+    border-bottom: 2px solid #4dd0e1;
+}
+
+
+header h1 {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: 600; /* Keep headings bolder for contrast */
+    margin-bottom: 0.5rem;
+}
+
+
+header .subtitle {
+    font-size: clamp(1.1rem, 3vw, 1.4rem);
+    font-weight: 400;
+    color: #bdc3c7;
+}
+
+
+/* Main Content & Sections */
+main {
+    padding: 2rem 0;
+}
+
+
+section {
+    padding: 3rem 0;
+    border-bottom: 1px solid #222;
+}
+
+
+section:last-of-type {
+    border-bottom: none;
+}
+
+
+h2 {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    color: #4dd0e1;
+    margin-bottom: 2rem; /* Increased margin for better spacing */
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #333;
+    font-weight: 600;
+}
+
+
+h3 {
+    font-size: clamp(1.4rem, 3vw, 1.8rem); /* Added responsive font-size */
+    font-weight: 600;
+    color: #e0e0e0;
+    margin-bottom: 1.5rem; /* Increased margin */
+}
+
+
+/* Demonstration Section: Videos */
+.video-container-large {
+    margin-bottom: 3rem;
+}
+
+
+.video-container-large video {
+    width: 100%;
+    border-radius: 8px;
+    background-color: #000;
+}
+
+
+.video-caption {
+    font-size: 0.9rem;
+    color: #aaa;
+    margin-top: 0.75rem;
+    text-align: center;
+}
+
+
+/* Responsive & Seamless Video Grid */
+.video-grid {
+    display: grid;
+    /* This makes the grid responsive: it fits as many 300px columns as it can */
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    gap: 0px; /* Added a small gap for definition */
+}
+
+
+.video-grid .video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures video fills container without distortion */
+    display: block;
+    background-color: #000;
+    border-bottom:30px solid rgba(0, 0, 0, 0) ;
+
+
+}
+
+
+/* Hardware List */
+#hardware ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+
+#hardware li {
+    background-color: #1a1a1a;
+    border-left: 3px solid #4dd0e1;
+    padding: 1rem 1.5rem;
+    margin-bottom: 0.75rem;
+    border-radius: 0 4px 4px 0;
+}
+
+
+/* SDG Section */
+.sdg-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+
+.sdg-card {
+    background-color: #1a1a1a;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #2a2a2a;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.sdg-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+.sdg-card h3 {
+    color: #4dd0e1;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+    font-size: 1.2rem; /* Overriding default h3 for card context */
+}
+
+
+/* Developer Section */
+.developer-info p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #2c3e50;
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+}
+
+
+/* Footer */
+footer {
+    background-color: #121212;
+    color: #e0e0e0;
+    padding: 3rem 0;
+    text-align: center;
+    border-top: 1px solid #222;
+}
+
+
+footer p {
+    margin-bottom: 1.5rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.github-button {
+    display: inline-block;
+    background-color: #4dd0e1;
+    color: #121212;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+
+.github-button:hover {
+    background-color: #88ffff;
+    transform: translateY(-3px);
+}
+
+/* ====================================================== */
+/* ============== NEW CSS STYLES START HERE ============= */
+/* ====================================================== */
+#core-logic > p {
+    max-width: 80ch; /* Improves readability */
+    margin-bottom: 3rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: #bdc3c7;
+}
+
+.logic-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.logic-step {
+    background: #151515;
+    border: 1px solid #252525;
+    border-left: 4px solid #4dd0e1;
+    padding: 2rem;
+    border-radius: 0 8px 8px 0;
+}
+
+.logic-step h3 {
+    color: #e0e0e0;
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.logic-step p {
+    color: #b0b0b0;
+}
+
+.logic-step strong {
+    color: #4dd0e1;
+    font-weight: 600;
+}
+

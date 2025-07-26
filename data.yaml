@@ -1,0 +1,28 @@
+train: C:\Users\palar\Documents\yantra\trafic_data\train\images
+val: C:\Users\palar\Documents\yantra\trafic_data\valid\images
+
+nc: 21
+names:
+  [
+    'ambulance',
+    'army vehicle',
+    'auto rickshaw',
+    'bicycle',
+    'bus',
+    'car',
+    'garbagevan',
+    'human hauler',
+    'minibus',
+    'minivan',
+    'motorbike',
+    'pickup',
+    'policecar',
+    'rickshaw',
+    'scooter',
+    'suv',
+    'taxi',
+    'three wheelers -CNG-',
+    'truck',
+    'van',
+    'wheelbarrow',
+  ]

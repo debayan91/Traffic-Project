@@ -1,0 +1,315 @@
+* {
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: clamp(0.5rem, 2vw, 1rem);
+}
+header {
+  height: fit-content;
+  width: 100%;
+  background-image: url('https://i0.wp.com/halcyonrealms.com/blogpics/japgifB.gif?resize=500%2C291&ssl=1');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #d6ffb5;
+  font-size: 2em;
+  margin: 0;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+body {
+  margin: 0;
+  background-color: #084724;
+  color: rgb(255, 255, 255);
+}
+.htext {
+  height: fit-content;
+  width: 12em;
+  padding: 1em;
+  font-size: 2em;
+  text-shadow: 0.1em 0.1em rgba(0, 82, 43, 0.758);
+  max-width: 50vw;
+  background-image: linear-gradient(
+    to right,
+    rgba(1, 55, 1, 0.791),
+    rgba(0, 255, 119, 0)
+  );
+  letter-spacing: 0.15em;
+  word-wrap: break-word;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  background-color: #222b29;
+  padding-left: 0;
+  text-align: left;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  position: sticky;
+  top: 0;
+  flex-wrap: wrap;
+}
+nav a {
+  display: inline-block;
+  font-size: 1.25rem;
+  width: fit-content;
+  height: fit-content;
+  text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+  text-shadow: none;
+  padding: 1em;
+  margin: 0;
+  color: #d6ffb5;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+nav a:hover {
+  text-decoration-color: greenyellow;
+  color: greenyellow;
+  text-shadow: 0.1em 0.1em rgba(0, 0, 0, 0.61);
+}
+nav div {
+  font-size: 1.25rem;
+  padding: 1em;
+  padding-left: 0;
+  padding-right: 0;
+  width: fit-content;
+  height: fit-content;
+}
+article {
+  background: linear-gradient(to right, #395f31, #036503, #578861);
+  background-size: 200% 200%;
+  animation: gradient 7s ease infinite;
+  padding: 2em;
+  color: #315e26;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+h1 {
+  text-decoration: underline;
+  font-size: 2em;
+  max-width: 50vw;
+  word-wrap: break-word;
+  line-height: 1.25em;
+}
+aside {
+  text-align: center;
+  line-height: 2em;
+}
+.sticky_box {
+  position: fixed;
+  float: right;
+  right: 0;
+  top: 60%;
+  backdrop-filter: blur(0.1em);
+  width: 2em;
+  height: 1em;
+  overflow: hidden;
+  color: rgba(0, 0, 0, 0);
+  background-color: #222b29d6;
+  padding: 1em;
+  border: none;
+  border-radius: 0.5em;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  transition: 500ms;
+}
+.sticky_box:hover {
+  width: 10em;
+  height: 5em;
+  background-color: #222b298a;
+  border: solid 0.2em #222b29;
+  border-right: none;
+  color: #b1dd9e;
+}
+section {
+  margin-bottom: 3rem;
+  font-size: 1.25em;
+  line-height: 1.5em;
+  background-color: #c0cfb2;
+  padding: 2em;
+  padding-top: 0.5em;
+
+  border-radius: 1em;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+li {
+  list-style: none;
+  padding: 0.5em;
+}
+.icon {
+  width: 1em;
+  height: fit-content;
+  margin-right: 0.5em;
+}
+aside a {
+  text-decoration: underline;
+  text-decoration-color: rgba(0, 0, 0, 0);
+  display: block;
+  width: fit-content;
+  color: #b1dd9e;
+  transition: 500ms;
+}
+aside a:hover {
+  text-decoration: underline;
+  color: greenyellow;
+}
+iframe {
+  display: inline-block;
+  width: 28em;
+  height: 15.75em;
+  margin: 2em;
+  margin-left: 0em;
+  border-radius: 1em;
+}
+li a {
+  text-decoration: underline 0.1em rgba(0, 0, 0, 0);
+  text-underline-offset: 0.25em;
+  color: #084724;
+  transition: 100ms ease-out;
+  font-size: 1.5rem;
+}
+li a:hover {
+  text-decoration: underline 0.1em;
+  text-underline-offset: 0.25em;
+}
+footer {
+  background-color: #222b29;
+  color: #e4f8ba;
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-us {
+  max-width: 35em;
+  margin: 0 auto;
+}
+
+.contact-us h2 {
+  font-size: 1.8em;
+  margin-bottom: 0.2em;
+}
+
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+.contact-info a {
+  font-size: 1.2em;
+  margin-left: 0.1em;
+  color: #9acd32;
+  text-decoration: underline rgba(0, 0, 0, 0);
+  transition: 300ms;
+}
+
+.contact-info a:hover {
+  text-decoration-color: greenyellow;
+  color: greenyellow;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-form label {
+  margin-top: 1em;
+  font-size: 1em;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-top: 1em;
+  padding: 1em;
+  border: 0.2em solid #9acd32;
+  border-radius: 0.2em;
+  transition: background-color 300ms;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  background-color: #e4f8ba;
+  outline: none;
+  caret-color: #222b29;
+}
+
+.contact-form button {
+  padding: 1em;
+  width: 12em;
+  text-align: center;
+  margin: auto;
+  margin-top: 1em;
+  background-color: #9acd32;
+  color: #084724;
+  border: none;
+  border-radius: 0.5em;
+  cursor: pointer;
+  transition: 300ms;
+}
+
+.contact-form button:hover {
+  color: #e4f8ba;
+  background-color: #084724;
+}
+iframe {
+  max-width: 50vw;
+  max-height: 50vh;
+  border: #232201 1em solid;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.imflex {
+  text-align: center;
+  align-items: center;
+  padding-top: 1em;
+}
+
+.img1 {
+  height: 30em;
+  width: justify-content;
+  border-radius: 1em;
+  border: #232201 1em solid;
+  max-width: 70vw;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.img2 {
+  height: 30em;
+  width: justify-content;
+  border-radius: 1em;
+  border: #084724 0.75em solid;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.cent {
+  justify-content: center;
+  text-align: center;
+}
+
+.in {
+  display: inline;
+  padding-top: 1em;
+  margin-top: 2em;
+}
+
+p {
+  font-size: 1.25em;
+}

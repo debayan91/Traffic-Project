@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='semantic.css')}}"
+    />
+  </head>
+  <body>
+    <header><div class="htext">Team ASL</div></header>
+    <nav>
+      <a href="#Home1">Home</a>
+      <div>|</div>
+      <a href="{{url_for('download')}}">Custom Model</a>
+      <div>|</div>
+      <a href="#contact-form">Contact Us</a>
+      <div>|</div>
+      <a href="{{url_for('download2')}}">Traffic Light Sim</a>
+    </nav>
+    <article id="Home1">
+      <section>
+        <div class="cent">
+          <h1 style="display: inline-block">
+            AI – Powered Smart Traffic Optimization System
+          </h1>
+        </div>
+
+        This project proposes a software-based AI-driven system to optimize
+        urban traffic flow. Using real time traffic data, the system dynamically
+        adjusts traffic light timings, predicts congestion patterns, and
+        provides actionable insights for city planners. The solution integrates
+        machine learning models with visualization tools, creating a scalable
+        and fully software-driven solution that aligns with smart city
+        initiatives.
+        <br />
+        <br />
+        Traffic congestion at signals is often exacerbated by static or manually
+        controlled timers that allocate equal time to all lanes, regardless of
+        actual traffic conditions. This inefficiency leads to unnecessary
+        delays, excessive fuel consumption, and increased air pollution,
+        negatively impacting both commuters and the environment. Our proposed
+        solution introduces a smart, adaptive traffic signal system that
+        dynamically adjusts signal durations based on real-time traffic
+        conditions. Using vehicle detection and classification, the system
+        estimates the number and types of vehicles in each lane and calculates
+        the optimal crossing time required. This dynamically updated signal
+        timing ensures smoother traffic flow, reducing wait times, fuel wastage,
+        and emissions. The process continuously repeats for each lane, ensuring
+        maximum efficiency and minimal congestion.
+      </section>
+      <section>
+        <div class="imflex">
+          <h1 class="in">Model Working</h1>
+          <p>
+            Here's a side by side video of how our model predicts the car type
+            using our custom model:
+          </p>
+          <iframe
+            src="static\\og.mp4"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            src="static\\res.mp4"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="cent">
+          <h1>Model Accuracy:</h1>
+          <img class="img1" src="static\\results.png" />
+          <h1 style="display: block">Data logs according to Formula:</h1>
+          <img class="img2" src="static\\log.png" />
+          <img class="img2" src="static\\log2.png" />
+          <img class="img2" src="static\\log3.png" />
+          <p>
+            Formula used - TimeSet = WeightOfSpeedClass x
+            NoOfVehiclesInSpeedClass / AverageSpeed
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="imflex">
+          <h1 class="in">Simulation</h1>
+          <p>
+            Here's a side by side simulated comparison of our system vs a static
+            timer based system
+          </p>
+          <iframe
+            src="static\\Static_Time_Demo.mp4"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            src="static\\Real Time_Demo.mp4"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+    </article>
+    <aside class="sticky_box">
+      Quick Links :
+      <a
+        href="https://github.com/SukrutaNadkarni/Advanced-Traffic-Control-System-for-Urban-Road-Network/"
+        target="_blank"
+        >Github</a
+      >
+    </aside>
+    <footer>
+      <div class="contact-us" id="contact-form">
+        <h2>Contact Us</h2>
+        <p>
+          We'd love to hear from you! Reach out to us through any of the
+          following methods:
+        </p>
+        <ul class="contact-info">
+          <li>
+            <strong>Email :</strong>
+            <a href="mailto:info@acceptus.com">info@acceptus.com</a>
+          </li>
+          <li>
+            <strong>Phone :</strong>
+            <a href="tel:+1234567890">+1 (234) 567-890</a>
+          </li>
+          <li><strong>Address :</strong> 123 Nature Lane, Greenfield, Earth</li>
+        </ul>
+        <form class="contact-form" action="/submit-contact" method="post">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Your Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>
