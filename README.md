@@ -1,6 +1,3 @@
-
-
-````markdown
 # Advanced Traffic Control System for Urban Road Network
 > An AI-Powered Solution for Smart City Traffic Optimization
 
@@ -9,30 +6,35 @@
 ![License](https://img.shields.io/github/license/debayan91/Traffic?style=for-the-badge)
 ![Python Version](https://img.shields.io/badge/python-3.9+-blue.svg?style=for-the-badge&logo=python)
 
-  
-  
-  Full system simulation demonstrating dynamic signal timing based on real-time traffic density.
-  
-  Note: It's highly recommended to replace the image path above with a GIF created from your `Real Time Demo.mp4` video.
+<br>
 
+<p align="center">
+  <!-- ======================================================================================================= -->
+  <!-- IMPORTANT: Replace the link below with the path to the demo GIF you uploaded to your repository! -->
+  <!-- Example: <img src="assets/demo.gif" alt="System Demo" width="800"/> -->
+  <!-- ======================================================================================================= -->
+  <img src="path/to/your/demo.gif" alt="System Demo" width="800"/>
+  <br/>
+  <em>Full system simulation demonstrating dynamic signal timing based on real-time traffic density.</em>
+</p>
 
 ---
 
 ## 📋 Table of Contents
 
-- [About The Project](#about-the-project)
-- [Key Features](#key-features)
-- [How It Works: The Core Logic](#how-it-works-the-core-logic)
-- [Tech Stack](#tech-stack)
-- [Hardware Requirements](#hardware-requirements)
-- [Getting Started](#getting-started)
+- [About The Project](#-about-the-project)
+- [Key Features](#-key-features)
+- [How It Works: The Core Logic](#-how-it-works-the-core-logic)
+- [Tech Stack](#-tech-stack)
+- [Hardware Requirements](#-hardware-requirements)
+- [Getting Started](#-getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation & Setup](#installation--setup)
-- [Usage](#usage)
-- [Achieved Sustainable Development Goals (SDGs)](#achieved-sustainable-development-goals-sdgs)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+- [Usage](#️-usage)
+- [Achieved Sustainable Development Goals (SDGs)](#-achieved-sustainable-development-goals-sdgs)
+- [Contributing](#-contributing)
+- [License](#-license)
+- [Contact](#-contact)
 
 ---
 
@@ -131,20 +133,7 @@ Follow these instructions to get a local copy up and running.
     ```
 
 3.  **Install Dependencies**
-    You will need to create a `requirements.txt` file with the following content and then run the installation command.
-
-    **`requirements.txt` file:**
-    ```
-    numpy
-    opencv-python
-    pygame
-    pyserial
-    torch
-    torchvision
-    ultralytics
-    ```
-
-    **Installation command:**
+    A `requirements.txt` file is included. Install all necessary packages with:
     ```
     pip install -r requirements.txt
     ```
@@ -157,7 +146,7 @@ Follow these instructions to get a local copy up and running.
     - Click `Upload` to flash the sketch to the Arduino.
 
 5.  **Assemble the Hardware**
-    - Follow the circuit diagram provided in the `/Hardware` folder to connect the LEDs and resistors to the Arduino on the breadboard.
+    - Follow a circuit diagram to connect the LEDs and resistors to the Arduino. A diagram can be found in the `/docs` folder.
 
 ---
 
@@ -165,7 +154,7 @@ Follow these instructions to get a local copy up and running.
 
 Once the setup is complete, you can run the main application.
 
-- Ensure your Arduino is connected to the computer.
+- Ensure your Arduino is connected to the computer and the correct COM port is specified in the script.
 - Run the main Python script from the root directory:
   ```
   python main.py
