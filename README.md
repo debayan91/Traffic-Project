@@ -4,11 +4,10 @@
 # Advanced Traffic Control System for Urban Road Network
 > An AI-Powered Solution for Smart City Traffic Optimization
 
-![GitHub stars](https://img.shields.io/github/stars/debayan91/Traffic?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/debayan91/Traffic?style=for-the-badge)
+![GitHub stars](https://img.shields.io/github/stars/debayan91/Traffic?style=for-the-badge&logo=github)
+![GitHub forks](https://img.shields.io/github/forks/debayan91/Traffic?style=for-the-badge&logo=github)
 ![License](https://img.shields.io/github/license/debayan91/Traffic?style=for-the-badge)
-![Python Version](https://img.shields.io/badge/python-3.9+-blue.svg?style=for-the-badge)
-
+![Python Version](https://img.shields.io/badge/python-3.9+-blue.svg?style=for-the-badge&logo=python)
 
   
   
